@@ -1,0 +1,80 @@
+\documentclass[a4j,10pt,titlepage]{jreport}
+\setlength{\oddsidemargin}{0mm}
+\setlength{\evensidemargin}{0mm}
+\setlength{\voffset}{-10mm}
+\setlength{\hoffset}{-5mm}
+\setlength{\headheight}{-0mm}
+\setlength{\topskip}{-0mm}
+\setlength{\textwidth}{170mm}
+\setlength{\textheight}{245mm}
+\pagestyle{empty} 
+\pagenumbering{arabic}
+
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{bm}
+\usepackage{amsfonts}
+\usepackage{comment}
+\usepackage{natbib} % 英語圏専用　参考文献  ->  \bibitem[aaa(bbb)] が aaa ( bbb ), (aaa, bbb) と表示される
+\usepackage{otf} % \UTF{2460}のような表示をできる様にする -> \ajMaru{1}と併用
+\usepackage{fancyhdr}
+\usepackage[dvipdfmx]{hyperref}
+\usepackage{graphicx}
+
+\begin{document}
+
+%頭作り
+\begin{flushright} %右へ
+\today %日付の自動更新
+\end{flushright}
+
+\begin{flushleft} %左へ
+xxxx株式会社\\ %\\ 
+xx様\\
+\end{flushleft}
+
+\begin{flushright} %右へ
+xx大学\\
+氏名\\
+〒041-8655\\
+住所
+\vspace{10mm}
+\end{flushright}
+
+\begin{center}
+{\huge 入社手続きの書類につきまして}
+\end{center}
+\vspace{10mm}
+拝啓　時下、貴社におかれましてはますますご清栄のことと心よりお慶び申し上げます。\\
+\begin{flushright} %右へ
+敬具\\
+\end{flushright}
+
+\begin{center} %中央へ
+記
+\end{center}
+
+\begin{flushleft} %左へ
+添付書類
+\end{flushleft}
+
+%両端揃えのコマンドが見つからなかった(自動らしい)のでスペースで代用
+\begin{itemize} %箇条書き
+ \item 書類名
+\end{itemize}
+
+\begin{flushright} %右へ
+以上\\
+\end{flushright}
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
